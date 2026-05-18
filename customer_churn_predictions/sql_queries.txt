@@ -1,0 +1,38 @@
+# 4. sql_queries.sql
+
+```sql
+CREATE DATABASE churn_db;
+
+USE churn_db;
+
+CREATE TABLE churn_predictions (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    Age INT,
+    Monthly_Charges FLOAT,
+    Tenure_Months INT,
+    Total_Spend FLOAT,
+    Days_Since_Last_Login INT,
+    Gender_Male INT,
+    Subscription_Type_Premium INT,
+    Subscription_Type_Standard INT,
+    Actual_Churn INT,
+    LR_Prediction INT,
+    LR_Probability FLOAT,
+    RF_Prediction INT,
+    RF_Probability FLOAT
+);
+
+SELECT * FROM churn_predictions;
+
+SELECT
+    COUNT(*) AS Total_Customers,
+    SUM(Actual_Churn) AS Churned_Customers
+FROM churn_predictions;
+
+SELECT
+    AVG(Monthly_Charges) AS Avg_Monthly_Charges
+FROM churn_predictions;
+
+SELECT
+    AVG(Total_Spend) AS Avg_Total_Spend
+FROM churn_predictions;

@@ -1,0 +1,11 @@
+CREATE DATABASE cricket_db;
+
+USE cricket_db;
+
+CREATE TABLE ball_predictions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    actual_runs FLOAT,
+    predicted_runs FLOAT,
+    actual_wickets FLOAT,
+    predicted_wickets FLOAT
+);

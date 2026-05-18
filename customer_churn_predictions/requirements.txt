@@ -1,0 +1,13 @@
+pandas
+numpy
+matplotlib
+scikit-learn
+mysql-connector-python
+
+| Library                | Purpose                   |
+| ---------------------- | ------------------------- |
+| pandas                 | Data handling             |
+| numpy                  | Numerical operations      |
+| matplotlib             | Charts & graphs           |
+| scikit-learn           | Machine Learning          |
+| mysql-connector-python | Connect Python with MySQL |
